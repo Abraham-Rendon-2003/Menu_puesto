@@ -1,19 +1,20 @@
 // Selecciona todos los elementos del menú
 const menuItems = document.querySelectorAll('.menu-item');
 
-// Detectar qué elemento está en el centro
+// Detectar qué elemento está en el centro del viewport
 const detectCenterItem = () => {
-    const windowHeight = window.innerHeight;
+    const windowHeight = window.innerHeight; // Altura del viewport
 
     menuItems.forEach(item => {
         const rect = item.getBoundingClientRect(); // Obtiene la posición del elemento
         const itemCenter = rect.top + rect.height / 2; // Centro del elemento
 
-        // Verifica si el centro del elemento está cerca del centro de la pantalla
+        // Verifica si el centro del elemento está cerca del centro del viewport
         if (itemCenter > windowHeight * 0.4 && itemCenter < windowHeight * 0.6) {
-            item.classList.add('center'); // Agrega la clase para escalar
+            item.classList.add('center'); // Aplica escala
+            console.log(`Elemento central detectado: ${item.querySelector('h2').innerText}`);
         } else {
-            item.classList.remove('center'); // Remueve la clase si no está en el centro
+            item.classList.remove('center'); // Restaura el tamaño
         }
     });
 };
