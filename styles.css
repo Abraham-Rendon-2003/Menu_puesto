@@ -7,9 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #ffa500, #561d97);
+    background: url('https://thumbs.dreamstime.com/b/fire-flames-background-pattern-flat-seamless-vector-illustration-eps-85804391.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
-
 /* Navbar */
 .navbar {
     position: fixed;
@@ -41,7 +41,7 @@ body {
 
 .menu-item h2 {
     font-size: 26px; /* Tamaño de letra más grande */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Estilo divertido */
+     /* Estilo divertido */
     color: rgb(255, 187, 61); /* Color del interior de la letra */
     -webkit-text-stroke: 1px black; /* Borde negro */
     text-align: center; /* Centrar el texto */
