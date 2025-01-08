@@ -48,12 +48,7 @@ body {
 }
 
 
-.menu-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
+
 
 .menu-item p {
     font-size: 16px;
@@ -88,10 +83,15 @@ body {
 .footer p {
     font-size: 14px;
 }
-
+.menu-item img {
+    width: 50%; 
+    height: 50%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
 .navbar-logo {
-    max-width: 120px; /* Ajusta el ancho máximo del logo */
-    height: auto;     /* Mantiene la proporción del logo */
-    margin: 0 auto;   /* Centra el logo horizontalmente */
-    display: block;   /* Asegura que el margen funcione correctamente */
+    max-width: 120px; 
+    height: auto;    
+    margin: 0 auto; 
+    display: block; 
 }
